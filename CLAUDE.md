@@ -13,4 +13,4 @@ Static site for Tom Shubert IT Consulting. Multi-page: Home, Microsoft 365, Serv
 - Legal pages: /privacy, /terms (website only), /agreement (Client Service Agreement: best efforts, no warranty, no guarantees). Warranty language stays off the footer. Tom should have his attorney review before launch.
 - Work examples come from Tom's sent emails to charge@tomshubert.com; always anonymize (no client or employee names).
 - Experience stat stays "40+ years in IT" (Tom prefers it; no exact or auto-updating count).
-- Tom supports clients nationwide (NY, Boston, Houston, Texas) and overseas employees remotely; onsite visits in Southern California.
+- Tom supports clients with offices across the U.S. and employees worldwide, remotely; onsite visits in Southern California. Never cite specific client locations (no cities, states or countries).
