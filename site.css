@@ -203,3 +203,21 @@ footer p{margin:0}
 .cf-note{margin:14px 0 0;font-size:.82rem;color:var(--ink-3)}
 .hp{position:absolute!important;left:-9999px!important;width:1px;height:1px;overflow:hidden}
 @media (max-width:600px){.cf-row{grid-template-columns:1fr;gap:0}}
+.hero .eyebrow::before{content:""}
+.hero .eyebrow{font-size:.9rem}
+.hero .rotator{display:inline;min-height:0;font-weight:500}
+.stories{padding-top:0;padding-bottom:96px}
+.story-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:18px;margin-top:1.6rem}
+.story-card{background:var(--card);border:1px solid var(--rule);border-radius:12px;padding:26px;display:flex;flex-direction:column}
+.story-card h3{font-size:1.2rem}
+.story-card p{color:var(--ink-2);margin:0 0 .8rem}
+.story-card .stat{font-size:2.4rem;margin:.6rem 0 .2rem;color:var(--ink)}
+.story-card .stat-label{margin-top:auto;padding-top:.6rem;color:var(--ink-3)}
+.tech-all{margin-top:0}
+.tech-all summary{cursor:pointer;list-style:none;padding:16px 0;color:var(--red-2);font-family:var(--display);font-weight:500;border-bottom:1px solid var(--rule)}
+.tech-all summary::-webkit-details-marker{display:none}
+.tech-all summary::after{content:" +"}
+.tech-all[open] summary::after{content:" \2212"}
+.tech-all .tech-rows{margin-top:0;border-top:0}
+.existing{margin-top:1.4rem;max-width:780px;color:var(--ink-2)}
+.existing b{color:var(--ink)}
