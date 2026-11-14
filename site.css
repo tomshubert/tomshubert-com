@@ -188,3 +188,4 @@ footer p{margin:0}
 .tech-row li{font-family:var(--mono);font-size:.82rem;color:var(--ink);background:var(--card);border:1px solid var(--rule);border-radius:999px;padding:5px 12px}
 .tech-more{margin-top:18px;color:var(--ink-2)}
 @media (max-width:700px){.tech-row{grid-template-columns:1fr;gap:10px}}
+.tech-more b{color:var(--ink);font-family:var(--display);font-weight:500}
