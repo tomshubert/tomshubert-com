@@ -221,3 +221,5 @@ footer p{margin:0}
 .tech-all .tech-rows{margin-top:0;border-top:0}
 .existing{margin-top:1.4rem;max-width:780px;color:var(--ink-2)}
 .existing b{color:var(--ink)}
+.hero-stats{list-style:none;padding:0;margin:2.2rem 0 0;display:flex;flex-wrap:wrap;gap:28px;color:var(--ink-2);font-size:.95rem}
+.hero-stats b{font-family:var(--display);font-weight:500;font-size:1.6rem;color:var(--ink);margin-right:6px}
