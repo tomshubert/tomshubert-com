@@ -250,3 +250,7 @@ h1.page-title{font-size:clamp(2.2rem,5vw,3.4rem);font-weight:300;margin:0 0 .5em
   #site-nav .nav-call{border:0;border-radius:0;color:var(--red-2)!important}
   .hero-band .top{position:absolute}
 }
+.anywhere{padding-top:0;padding-bottom:96px}
+.anywhere-inner{display:grid;grid-template-columns:1fr 1.2fr;gap:56px;align-items:start;border-top:1px solid var(--rule);padding-top:56px}
+.anywhere-inner p{color:var(--ink-2)}
+@media (max-width:800px){.anywhere-inner{grid-template-columns:1fr;gap:12px}}

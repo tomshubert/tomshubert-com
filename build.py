@@ -12,8 +12,8 @@ NAV = [("/", "Home"), ("/microsoft-365", "Microsoft 365"), ("/services", "Servic
 PAGES = [
   # (file, path, title, description, sections)
   ("index.html", "/", "Tom Shubert IT Consulting | Your personal IT consultant since 1982",
-   "Hands-on IT support for small businesses in the Los Angeles area: Microsoft 365, networks, computers, phones and websites. No help desk, no monthly contract required.",
-   ["hero", "personal", "overview", "how", "cta"]),
+   "Hands-on IT support for small businesses, based in Calabasas, CA and supporting clients across the U.S.: Microsoft 365, networks, computers, phones and websites. No help desk, no monthly contract required.",
+   ["hero", "personal", "anywhere", "overview", "how", "cta"]),
   ("microsoft-365.html", "/microsoft-365", "Microsoft 365 | Tom Shubert IT Consulting",
    "Moving small offices off old servers to Microsoft 365: SharePoint, OneDrive, Exchange Online and Teams, plus optional backup and 24/7 monitoring.",
    ["m365", "cta"]),
@@ -33,7 +33,7 @@ PAGES = [
 LEGAL = [("privacy.html", "/privacy"), ("terms.html", "/terms"), ("agreement.html", "/agreement")]
 
 FONTS = '<link rel="preconnect" href="https://fonts.googleapis.com">\n<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>\n<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">'
-LDJSON = '<script type="application/ld+json">{"@context":"https://schema.org","@type":"ProfessionalService","name":"Tom Shubert IT Consulting","url":"https://tomshubert.com/","telephone":"+1-818-635-6777","email":"info@tomshubert.com","foundingDate":"1982","founder":{"@type":"Person","name":"Tom Shubert"},"address":{"@type":"PostalAddress","postOfficeBoxNumber":"8922","addressLocality":"Calabasas","addressRegion":"CA","postalCode":"91372","addressCountry":"US"},"areaServed":"Los Angeles area","description":"Hands-on IT support for small businesses: Microsoft 365, networks, computers, business phones and websites."}</script>'
+LDJSON = '<script type="application/ld+json">{"@context":"https://schema.org","@type":"ProfessionalService","name":"Tom Shubert IT Consulting","url":"https://tomshubert.com/","telephone":"+1-818-635-6777","email":"info@tomshubert.com","foundingDate":"1982","founder":{"@type":"Person","name":"Tom Shubert"},"address":{"@type":"PostalAddress","postOfficeBoxNumber":"8922","addressLocality":"Calabasas","addressRegion":"CA","postalCode":"91372","addressCountry":"US"},"areaServed":"United States","description":"Hands-on IT support for small businesses: Microsoft 365, networks, computers, business phones and websites."}</script>'
 
 def esc(t): return t.replace("&", "&amp;").replace('"', "&quot;")
 
@@ -96,7 +96,7 @@ def build():
             if i == 0 and not home: h = first_h2_to_h1(h)
             body.append(h)
         if home:
-            top = '<div class="hero-band">\n' + header(path, True) + "\n" + body[0] + '  <p class="since" aria-hidden="true">CALABASAS, CA</p>\n</div>\n<main>\n' + "\n".join(body[1:]) + "</main>"
+            top = '<div class="hero-band">\n' + header(path, True) + "\n" + body[0] + '  <p class="since" aria-hidden="true">CALABASAS, CA &middot; CLIENTS NATIONWIDE</p>\n</div>\n<main>\n' + "\n".join(body[1:]) + "</main>"
         else:
             top = header(path, False) + '\n<main class="subpage">\n' + "\n".join(body) + "</main>"
         (ROOT / fn).write_text(head(path, title, desc, home) + "\n" + top + "\n" + FOOTER + "\n" + script + "\n</body>\n</html>\n")
