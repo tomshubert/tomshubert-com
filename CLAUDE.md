@@ -4,7 +4,7 @@ Static site for Tom Shubert IT Consulting (hand-written index.html + site.css, n
 
 - Positioning: hands-on, relationship-driven IT consultant since 1982; jack of all trades, NOT a security expert. Lead with Microsoft 365 (SharePoint, OneDrive, Exchange Online; decades of Microsoft servers, trend is moving off servers).
 - Services: computers, networks/wireless, Nextiva & RingCentral VoIP (channel partner), office technology, malware/recovery, websites via YourWEB (samples: markpassin.com, fakes.com).
-- Clients OK to show: Newhouse & Creager LLP (story), California Urology, Eagle Eyes, Reeds Furniture, Barry P. Goldberg. Never show Montage Dev or Smart Planet.
+- Clients OK to show: Newhouse & Creager LLP (story), California Urology, Marquee Funding Group (hard money lender), Miller Law, Bennett+Mercado (travel), Eagle Eyes, Reeds Furniture, Barry P. Goldberg. Not RK Law (limited role) or Gayle Law Group (closed). Never show Montage Dev or Smart Planet.
 - Contact: 818.635.6777, info@tomshubert.com, P.O. Box 8922, Calabasas, CA 91372. No home address.
 - Look: dark, techy, red accent, Poppins/Inter/JetBrains Mono (after the original site).
 - Preview mode: noindex meta, robots.txt Disallow, preview banner. Remove all three only when Tom approves launch.
