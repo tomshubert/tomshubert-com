@@ -91,7 +91,8 @@ section{scroll-margin-top:20px}
 .clients li:first-child{border-top:0}
 
 .about{background:var(--bg-2);border-top:1px solid var(--rule);border-bottom:1px solid var(--rule);padding:96px 0}
-.about-inner{display:grid;grid-template-columns:220px 1fr;gap:56px;align-items:center}
+.about-inner{display:grid;grid-template-columns:220px 1fr;gap:56px;align-items:start}
+.about-inner .portrait{position:sticky;top:40px;margin-top:8px}
 .about p{max-width:62ch;color:var(--ink-2)}
 .portrait{width:220px;height:220px;border-radius:50%;background:radial-gradient(circle at 30% 30%,#2a3442,#121821);border:1px solid var(--rule);display:grid;place-items:center;overflow:hidden;box-shadow:0 0 0 6px var(--bg-2),0 0 0 7px rgba(224,49,63,.5)}
 .portrait span{font-family:var(--display);color:var(--ink);font-size:3.4rem;font-weight:300}
