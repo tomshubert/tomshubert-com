@@ -118,3 +118,34 @@ footer p{margin:0}
   .since{display:none}
 }
 @media (prefers-reduced-motion:reduce){.rotator .cursor{animation:none}html{scroll-behavior:auto}}
+
+/* expertise list */
+.expertise{margin-top:28px;border:1px solid var(--rule);border-radius:12px;background:var(--bg)}
+.expertise summary{cursor:pointer;padding:18px 24px;font-family:var(--display);font-weight:500;color:var(--ink);list-style:none}
+.expertise summary::-webkit-details-marker{display:none}
+.expertise summary::before{content:"+ ";color:var(--red-2);font-family:var(--mono)}
+.expertise[open] summary::before{content:"\2212 "}
+.exp-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:28px;padding:4px 24px 26px}
+.exp-grid h3{font-size:1rem;color:var(--red-2)}
+.exp-grid ul{margin:0;padding-left:1.1em;color:var(--ink-2);font-size:.94rem}
+.exp-grid li{margin:.25em 0}
+
+/* career timeline */
+.career{list-style:none;padding:0;margin:1.4rem 0;border-left:1px solid var(--rule)}
+.career li{position:relative;padding:0 0 14px 22px;display:grid;grid-template-columns:90px 1fr;gap:12px;color:var(--ink-2);font-size:.96rem}
+.career li::before{content:"";position:absolute;left:-5px;top:.55em;width:9px;height:9px;border-radius:50%;background:var(--red)}
+.career b{font-family:var(--mono);font-weight:500;color:var(--ink);font-size:.85rem;padding-top:.15em}
+@media (max-width:600px){.career li{grid-template-columns:1fr;gap:2px}}
+
+/* legal pages + footer */
+.top-static{position:static}
+.legal{padding-top:40px;padding-bottom:80px}
+.legal>*{max-width:780px}
+.legal h1{font-size:clamp(2rem,4vw,2.8rem)}
+.legal h2{font-size:1.3rem;font-weight:500;margin-top:2rem}
+.legal p{color:var(--ink-2)}
+.legal .updated{font-family:var(--mono);font-size:.8rem;color:var(--ink-3)}
+.legal .notice{background:var(--card);border:1px solid var(--rule);border-left:3px solid var(--red);border-radius:8px;padding:16px 18px;font-size:.86rem;line-height:1.55;color:var(--ink)}
+.site-footer{display:block}
+.footer-row{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.footer-row p{margin:0}
