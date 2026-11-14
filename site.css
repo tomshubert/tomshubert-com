@@ -189,3 +189,17 @@ footer p{margin:0}
 .tech-more{margin-top:18px;color:var(--ink-2)}
 @media (max-width:700px){.tech-row{grid-template-columns:1fr;gap:10px}}
 .tech-more b{color:var(--ink);font-family:var(--display);font-weight:500}
+.contact-form{margin-top:1.8rem;max-width:780px;background:var(--card);border:1px solid var(--rule);border-radius:12px;padding:24px}
+.contact-form label{display:block;font-size:.85rem;color:var(--ink-2);margin-bottom:14px}
+.contact-form label span{color:var(--ink-3)}
+.contact-form input,.contact-form textarea{display:block;width:100%;margin-top:6px;background:var(--bg);border:1px solid var(--rule);border-radius:8px;color:var(--ink);font:inherit;font-size:1rem;padding:10px 12px}
+.contact-form input:focus,.contact-form textarea:focus{outline:none;border-color:var(--red-2)}
+.cf-row{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.cf-actions{display:flex;align-items:center;gap:16px;flex-wrap:wrap}
+.cf-actions .btn{border:0;cursor:pointer}
+.cf-actions .btn:disabled{opacity:.6;cursor:wait}
+.cf-status{margin:0;font-size:.95rem}
+.cf-status.ok{color:#5fd39a}.cf-status.err{color:var(--red-2)}
+.cf-note{margin:14px 0 0;font-size:.82rem;color:var(--ink-3)}
+.hp{position:absolute!important;left:-9999px!important;width:1px;height:1px;overflow:hidden}
+@media (max-width:600px){.cf-row{grid-template-columns:1fr;gap:0}}
