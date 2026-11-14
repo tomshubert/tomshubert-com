@@ -12,3 +12,4 @@ Static site for Tom Shubert IT Consulting (hand-written index.html + site.css, n
 - Never publish Tom's rates or exact billing increments (0.10 hr minimum, then quarter hours). Site says only "small increments, no one-hour minimums." Old-site claims of "no markup," "free consultation," "15-min no minimum," and Panasonic/Avaya support are unconfirmed; leave out unless Tom confirms.
 - Legal pages: /privacy, /terms (website only), /agreement (Client Service Agreement: best efforts, no warranty, no guarantees). Warranty language stays off the footer. Tom should have his attorney review before launch.
 - Work examples come from Tom's sent emails to charge@tomshubert.com; always anonymize (no client or employee names).
+- Experience stat stays "40+ years in IT" (Tom prefers it; no exact or auto-updating count).
