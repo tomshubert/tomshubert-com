@@ -9,3 +9,6 @@ Static site for Tom Shubert IT Consulting (hand-written index.html + site.css, n
 - Look: dark, techy, red accent, Poppins/Inter/JetBrains Mono (after the original site).
 - Preview mode: noindex meta, robots.txt Disallow, preview banner. Remove all three only when Tom approves launch.
 - Launch plan: move DNS from GoDaddy (ns11/ns12.domaincontrol.com) to Cloudflare, copying every record first (Google Workspace MX especially); then consider cancelling GoDaddy hosting (107.180.46.146). After launch, add one line on fakes.com About linking to tomshubert.com.
+- Never publish Tom's rates or exact billing increments (0.10 hr minimum, then quarter hours). Site says only "small increments, no one-hour minimums." Old-site claims of "no markup," "free consultation," "15-min no minimum," and Panasonic/Avaya support are unconfirmed; leave out unless Tom confirms.
+- Legal pages: /privacy, /terms (website only), /agreement (Client Service Agreement: best efforts, no warranty, no guarantees). Warranty language stays off the footer. Tom should have his attorney review before launch.
+- Work examples come from Tom's sent emails to charge@tomshubert.com; always anonymize (no client or employee names).

@@ -160,3 +160,7 @@ footer p{margin:0}
 .callout{margin-top:22px;background:linear-gradient(90deg,rgba(224,49,63,.12),transparent 70%);border:1px solid var(--rule);border-left:3px solid var(--red);border-radius:10px;padding:20px 24px}
 .callout p{margin:0;color:var(--ink);max-width:80ch}
 .callout .eyebrow{margin-bottom:.5rem}
+.how{padding-top:0;padding-bottom:96px}
+.how-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px;margin-top:1.6rem}
+.how-grid>div{border-top:2px solid var(--red);padding-top:16px}
+.how-grid p{margin:0;color:var(--ink-2);font-size:.96rem}
