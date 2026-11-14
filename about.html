@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>About Tom | Tom Shubert IT Consulting</title>
+<meta name="description" content="Tom Shubert has been doing IT since 1982, from mainframes at Coca-Cola to today's cloud. Hands-on, relationship-driven support for small businesses.">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#0b0e13">
+<link rel="canonical" href="https://tomshubert.com/about">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://tomshubert.com/about">
+<meta property="og:title" content="About Tom | Tom Shubert IT Consulting">
+<meta property="og:description" content="Tom Shubert has been doing IT since 1982, from mainframes at Coca-Cola to today's cloud. Hands-on, relationship-driven support for small businesses.">
+<meta property="og:image" content="https://tomshubert.com/tom.jpg">
+
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/site.css">
+</head>
+<body>
+<div class="preview-banner">Preview of the new site. The current tomshubert.com stays live until Tom approves this one.</div>
+<header class="top wrap top-static">
+  <a class="brand" href="/"><span class="brand-name">Tom Shubert<span>IT Consulting</span></span></a>
+  <button class="menu-btn" aria-expanded="false" aria-controls="site-nav">Menu</button>
+  <nav id="site-nav" aria-label="Main">
+      <a href="/">Home</a>
+      <a href="/microsoft-365">Microsoft 365</a>
+      <a href="/services">Services</a>
+      <a href="/clients">Clients</a>
+      <a href="/about" aria-current="page">About</a>
+      <a href="/contact">Contact</a>
+      <a class="nav-call" href="tel:+18186356777">818.635.6777</a>
+  </nav>
+</header>
+<main class="subpage">
+<section id="about" class="about">
+  <div class="wrap about-inner">
+    <div class="portrait"><img src="/tom.jpg" alt="Tom Shubert" width="600" height="600" loading="lazy"></div>
+    <div>
+      <p class="eyebrow">About</p>
+      <h1 class=\"page-title\">Tom Shubert</h1>
+      <p>A computer nerd since age 13, I've been doing IT since 1982, through every change from mainframes and in-house servers to today's cloud.</p>
+      <ol class="career">
+        <li><b>1982</b><span>After graduating from Emory University, began consulting as a contract programmer on mainframe and minicomputer projects for Atlanta companies, including special projects at The Coca-Cola Company's headquarters.</span></li>
+        <li><b>1984</b><span>Co-founded a microcomputer consulting company that built PCs and set up and supported office networks for companies across the United States.</span></li>
+        <li><b>Mid-'80s</b><span>As a Novell Direct Gold Reseller, installed some of the first office networks, replacing big computers and dumb terminals.</span></li>
+        <li><b>1988</b><span>Moved from Atlanta to Los Angeles and went in-house, running the network and computer systems for a securities firm.</span></li>
+        <li><b>1994</b><span>Went back to independent IT consulting for small businesses, and started YourWEB Services for websites.</span></li>
+        <li><b>Today</b><span>About 100 businesses and individuals supported in recent years, many moving off their servers and onto Microsoft 365.</span></li>
+      </ol>
+      <p>I work with small businesses of up to about 50 people. They range from one-person mortgage and insurance offices to law firms of 20 attorneys and staff, and even a high-tech defense contractor division with a parent company overseas. I'm a jack of all trades by design: one person who understands the network, the phones, the email and the website, tells you straight what's wrong, and doesn't stop until it's fixed.</p>
+    </div>
+  </div>
+</section>
+
+<section class="cta-band">
+  <div class="wrap cta-inner">
+    <div>
+      <h2>Let's talk about your office</h2>
+      <p>Tell me what's going on. I'll tell you honestly whether I can help.</p>
+    </div>
+    <div class="cta">
+      <a class="btn" href="tel:+18186356777">Call 818.635.6777</a>
+      <a class="btn btn-quiet" href="/contact">Send a message</a>
+    </div>
+  </div>
+</section>
+</main>
+<footer class="wrap site-footer">
+  <div class="footer-row">
+    <p>&copy; <span id="yr">2026</span> Tom Shubert IT Consulting &middot; 818.635.6777 &middot; <a href="mailto:info@tomshubert.com">info@tomshubert.com</a></p>
+    <p><a href="/privacy">Privacy</a> &middot; <a href="/terms">Terms of Use</a> &middot; <a href="/agreement">Client Service Agreement</a> &middot; Free scam alerts at <a href="https://fakes.com">FAKES.COM</a> &middot; Websites by <a href="https://yourweb.com">YourWEB Services</a></p>
+  </div>
+</footer>
+<script>
+document.getElementById('yr').textContent=new Date().getFullYear();
+(function(){var b=document.querySelector('.menu-btn'),n=document.getElementById('site-nav');if(!b||!n)return;
+b.addEventListener('click',function(){var o=n.classList.toggle('open');b.setAttribute('aria-expanded',o);b.textContent=o?'Close':'Menu';});})();
+(function(){
+  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  var words=["whole office","Microsoft 365","SharePoint & OneDrive","networks","computers","business phones","office technology","websites"];
+  var el=document.getElementById('word'), i=0; if(!el) return;
+  function type(w,n){ el.textContent=w.slice(0,n); if(n<w.length) setTimeout(function(){type(w,n+1)},55); else setTimeout(erase,2200); }
+  function erase(){ var t=el.textContent; if(t.length){ el.textContent=t.slice(0,-1); setTimeout(erase,28);} else { i=(i+1)%words.length; type(words[i],1);} }
+  setTimeout(erase,2400);
+})();
+
+(function(){
+  var f=document.getElementById('contact-form'); if(!f) return;
+  var st=f.querySelector('.cf-status'), btn=f.querySelector('button');
+  f.addEventListener('submit',function(e){
+    e.preventDefault();
+    var d={}; new FormData(f).forEach(function(v,k){d[k]=v;});
+    if(!d.name||!d.email||!d.message){st.textContent='Please fill in your name, email and message.';st.className='cf-status err';return;}
+    btn.disabled=true; st.textContent='Sending\u2026'; st.className='cf-status';
+    fetch('https://fakes.com/api/tsc-contact',{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify(d)})
+      .then(function(r){return r.json().then(function(j){return {ok:r.ok,j:j};});})
+      .then(function(x){
+        if(x.ok&&x.j.ok){f.reset();st.textContent='Thanks! Your message is on its way. I\'ll get back to you soon.';st.className='cf-status ok';}
+        else{st.textContent=(x.j&&x.j.error)||'Sorry, something went wrong. Please call 818.635.6777.';st.className='cf-status err';}
+      })
+      .catch(function(){st.textContent='Sorry, something went wrong. Please call 818.635.6777 or email info@tomshubert.com.';st.className='cf-status err';})
+      .then(function(){btn.disabled=false;});
+  });
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact | Tom Shubert IT Consulting</title>
+<meta name="description" content="Call 818.635.6777, email info@tomshubert.com or send a message to Tom Shubert IT Consulting.">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#0b0e13">
+<link rel="canonical" href="https://tomshubert.com/contact">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://tomshubert.com/contact">
+<meta property="og:title" content="Contact | Tom Shubert IT Consulting">
+<meta property="og:description" content="Call 818.635.6777, email info@tomshubert.com or send a message to Tom Shubert IT Consulting.">
+<meta property="og:image" content="https://tomshubert.com/tom.jpg">
+
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/site.css">
+</head>
+<body>
+<div class="preview-banner">Preview of the new site. The current tomshubert.com stays live until Tom approves this one.</div>
+<header class="top wrap top-static">
+  <a class="brand" href="/"><span class="brand-name">Tom Shubert<span>IT Consulting</span></span></a>
+  <button class="menu-btn" aria-expanded="false" aria-controls="site-nav">Menu</button>
+  <nav id="site-nav" aria-label="Main">
+      <a href="/">Home</a>
+      <a href="/microsoft-365">Microsoft 365</a>
+      <a href="/services">Services</a>
+      <a href="/clients">Clients</a>
+      <a href="/about">About</a>
+      <a href="/contact" aria-current="page">Contact</a>
+      <a class="nav-call" href="tel:+18186356777">818.635.6777</a>
+  </nav>
+</header>
+<main class="subpage">
+<section id="contact" class="contact wrap">
+  <p class="eyebrow">Contact</p>
+  <h1 class=\"page-title\">Let's talk about your office</h1>
+  <p>Call, email, or send a message below and tell me what's going on. I'll tell you honestly whether I can help.</p>
+  <p class="existing"><b>Already a client?</b> Email me at <a href="mailto:info@tomshubert.com">info@tomshubert.com</a> for anything that isn't urgent, so there's a written record. If something is down or urgent, call.</p>
+  <p class="never"><b>A note for my clients:</b> I will never ask for your password, or ask you to approve a sign-in, by email or text. If someone claiming to be me does, don't respond. Call me at <a href="tel:+18186356777">818.635.6777</a>.</p>
+  <form class="contact-form" id="contact-form" novalidate>
+    <div class="cf-row">
+      <label>Name<input name="name" autocomplete="name" required maxlength="100"></label>
+      <label>Company <span>(optional)</span><input name="company" autocomplete="organization" maxlength="120"></label>
+    </div>
+    <div class="cf-row">
+      <label>Email<input name="email" type="email" autocomplete="email" required maxlength="254"></label>
+      <label>Phone <span>(optional)</span><input name="phone" type="tel" autocomplete="tel" maxlength="40"></label>
+    </div>
+    <label>How can I help?<textarea name="message" rows="5" required maxlength="5000"></textarea></label>
+    <label class="hp" aria-hidden="true">Website<input name="website" tabindex="-1" autocomplete="off"></label>
+    <div class="cf-actions">
+      <button class="btn" type="submit">Send message</button>
+      <p class="cf-status" role="status" aria-live="polite"></p>
+    </div>
+    <p class="cf-note">Please don't include passwords or other sensitive details in this form.</p>
+  </form>
+  <dl>
+    <div><dt>Phone</dt><dd><a href="tel:+18186356777">818.635.6777</a></dd></div>
+    <div><dt>Email</dt><dd><a href="mailto:info@tomshubert.com">info@tomshubert.com</a></dd></div>
+    <div><dt>Mail</dt><dd>P.O. Box 8922<br>Calabasas, CA 91372</dd></div>
+  </dl>
+</section>
+</main>
+<footer class="wrap site-footer">
+  <div class="footer-row">
+    <p>&copy; <span id="yr">2026</span> Tom Shubert IT Consulting &middot; 818.635.6777 &middot; <a href="mailto:info@tomshubert.com">info@tomshubert.com</a></p>
+    <p><a href="/privacy">Privacy</a> &middot; <a href="/terms">Terms of Use</a> &middot; <a href="/agreement">Client Service Agreement</a> &middot; Free scam alerts at <a href="https://fakes.com">FAKES.COM</a> &middot; Websites by <a href="https://yourweb.com">YourWEB Services</a></p>
+  </div>
+</footer>
+<script>
+document.getElementById('yr').textContent=new Date().getFullYear();
+(function(){var b=document.querySelector('.menu-btn'),n=document.getElementById('site-nav');if(!b||!n)return;
+b.addEventListener('click',function(){var o=n.classList.toggle('open');b.setAttribute('aria-expanded',o);b.textContent=o?'Close':'Menu';});})();
+(function(){
+  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  var words=["whole office","Microsoft 365","SharePoint & OneDrive","networks","computers","business phones","office technology","websites"];
+  var el=document.getElementById('word'), i=0; if(!el) return;
+  function type(w,n){ el.textContent=w.slice(0,n); if(n<w.length) setTimeout(function(){type(w,n+1)},55); else setTimeout(erase,2200); }
+  function erase(){ var t=el.textContent; if(t.length){ el.textContent=t.slice(0,-1); setTimeout(erase,28);} else { i=(i+1)%words.length; type(words[i],1);} }
+  setTimeout(erase,2400);
+})();
+
+(function(){
+  var f=document.getElementById('contact-form'); if(!f) return;
+  var st=f.querySelector('.cf-status'), btn=f.querySelector('button');
+  f.addEventListener('submit',function(e){
+    e.preventDefault();
+    var d={}; new FormData(f).forEach(function(v,k){d[k]=v;});
+    if(!d.name||!d.email||!d.message){st.textContent='Please fill in your name, email and message.';st.className='cf-status err';return;}
+    btn.disabled=true; st.textContent='Sending\u2026'; st.className='cf-status';
+    fetch('https://fakes.com/api/tsc-contact',{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify(d)})
+      .then(function(r){return r.json().then(function(j){return {ok:r.ok,j:j};});})
+      .then(function(x){
+        if(x.ok&&x.j.ok){f.reset();st.textContent='Thanks! Your message is on its way. I\'ll get back to you soon.';st.className='cf-status ok';}
+        else{st.textContent=(x.j&&x.j.error)||'Sorry, something went wrong. Please call 818.635.6777.';st.className='cf-status err';}
+      })
+      .catch(function(){st.textContent='Sorry, something went wrong. Please call 818.635.6777 or email info@tomshubert.com.';st.className='cf-status err';})
+      .then(function(){btn.disabled=false;});
+  });
+})();
+</script>
+</body>
+</html>

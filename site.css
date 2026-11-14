@@ -113,7 +113,7 @@ footer p{margin:0}
   .about-inner{grid-template-columns:1fr;gap:28px}
   .portrait{width:150px;height:150px}
   .portrait span{font-size:2.4rem}
-  nav a:not(.nav-call){display:none}
+
   .hero-band{min-height:auto}
   .hero{padding-top:160px;padding-bottom:64px}
   .since{display:none}
@@ -223,3 +223,30 @@ footer p{margin:0}
 .existing b{color:var(--ink)}
 .hero-stats{list-style:none;padding:0;margin:2.2rem 0 0;display:flex;flex-wrap:wrap;gap:28px;color:var(--ink-2);font-size:.95rem}
 .hero-stats b{font-family:var(--display);font-weight:500;font-size:1.6rem;color:var(--ink);margin-right:6px}
+
+/* multi-page */
+nav a[aria-current="page"]{color:var(--ink);text-decoration:underline;text-decoration-color:var(--red);text-underline-offset:6px}
+.menu-btn{display:none;background:transparent;border:1px solid var(--rule);color:var(--ink);border-radius:999px;padding:6px 14px;font:inherit;font-size:.9rem;cursor:pointer}
+.subpage>section:first-child{padding-top:56px}
+.subpage .services:first-child{padding-top:56px}
+h1.page-title{font-size:clamp(2.2rem,5vw,3.4rem);font-weight:300;margin:0 0 .5em}
+.overview{padding-top:0;padding-bottom:96px}
+.ov-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px;margin-top:1.6rem}
+.ov-card{display:flex;flex-direction:column;background:var(--card);border:1px solid var(--rule);border-radius:12px;padding:24px;text-decoration:none;transition:border-color .2s,transform .2s}
+.ov-card:hover{border-color:var(--red);transform:translateY(-2px);color:inherit}
+.ov-card p{color:var(--ink-2);margin:0 0 1rem;font-size:.96rem}
+.ov-card span{margin-top:auto;color:var(--red-2);font-family:var(--display);font-weight:500;font-size:.92rem}
+.cta-band{background:var(--bg-2);border-top:1px solid var(--rule);border-bottom:1px solid var(--rule);padding:56px 0;margin-top:0}
+.cta-inner{display:flex;justify-content:space-between;align-items:center;gap:28px;flex-wrap:wrap}
+.cta-inner h2{margin:0 0 .3em}
+.cta-inner p{margin:0;color:var(--ink-2)}
+.site-footer{margin-top:0}
+@media (max-width:860px){
+  .menu-btn{display:inline-block}
+  .top{flex-wrap:wrap}
+  #site-nav{display:none;width:100%;flex-direction:column;align-items:flex-start;gap:0;margin-top:12px;background:var(--card);border:1px solid var(--rule);border-radius:12px;padding:8px 0}
+  #site-nav.open{display:flex}
+  #site-nav a{padding:12px 20px;width:100%;color:var(--ink)}
+  #site-nav .nav-call{border:0;border-radius:0;color:var(--red-2)!important}
+  .hero-band .top{position:absolute}
+}

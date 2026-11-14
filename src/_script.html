@@ -1,0 +1,32 @@
+<script>
+document.getElementById('yr').textContent=new Date().getFullYear();
+(function(){var b=document.querySelector('.menu-btn'),n=document.getElementById('site-nav');if(!b||!n)return;
+b.addEventListener('click',function(){var o=n.classList.toggle('open');b.setAttribute('aria-expanded',o);b.textContent=o?'Close':'Menu';});})();
+(function(){
+  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  var words=["whole office","Microsoft 365","SharePoint & OneDrive","networks","computers","business phones","office technology","websites"];
+  var el=document.getElementById('word'), i=0; if(!el) return;
+  function type(w,n){ el.textContent=w.slice(0,n); if(n<w.length) setTimeout(function(){type(w,n+1)},55); else setTimeout(erase,2200); }
+  function erase(){ var t=el.textContent; if(t.length){ el.textContent=t.slice(0,-1); setTimeout(erase,28);} else { i=(i+1)%words.length; type(words[i],1);} }
+  setTimeout(erase,2400);
+})();
+
+(function(){
+  var f=document.getElementById('contact-form'); if(!f) return;
+  var st=f.querySelector('.cf-status'), btn=f.querySelector('button');
+  f.addEventListener('submit',function(e){
+    e.preventDefault();
+    var d={}; new FormData(f).forEach(function(v,k){d[k]=v;});
+    if(!d.name||!d.email||!d.message){st.textContent='Please fill in your name, email and message.';st.className='cf-status err';return;}
+    btn.disabled=true; st.textContent='Sending\u2026'; st.className='cf-status';
+    fetch('https://fakes.com/api/tsc-contact',{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify(d)})
+      .then(function(r){return r.json().then(function(j){return {ok:r.ok,j:j};});})
+      .then(function(x){
+        if(x.ok&&x.j.ok){f.reset();st.textContent='Thanks! Your message is on its way. I\'ll get back to you soon.';st.className='cf-status ok';}
+        else{st.textContent=(x.j&&x.j.error)||'Sorry, something went wrong. Please call 818.635.6777.';st.className='cf-status err';}
+      })
+      .catch(function(){st.textContent='Sorry, something went wrong. Please call 818.635.6777 or email info@tomshubert.com.';st.className='cf-status err';})
+      .then(function(){btn.disabled=false;});
+  });
+})();
+</script>

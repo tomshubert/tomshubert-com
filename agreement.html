@@ -7,6 +7,13 @@
 <meta name="description" content="The client service agreement for IT services provided by Tom Shubert IT Consulting: best-efforts services, no warranties, and limitation of liability.">
 <meta name="robots" content="noindex, nofollow">
 <meta name="theme-color" content="#0b0e13">
+<link rel="canonical" href="https://tomshubert.com/agreement">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://tomshubert.com/agreement">
+<meta property="og:title" content="Client Service Agreement | Tom Shubert IT Consulting">
+<meta property="og:description" content="The client service agreement for IT services provided by Tom Shubert IT Consulting: best-efforts services, no warranties, and limitation of liability.">
+<meta property="og:image" content="https://tomshubert.com/tom.jpg">
+
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,16 +22,19 @@
 </head>
 <body>
 <div class="preview-banner">Preview of the new site. The current tomshubert.com stays live until Tom approves this one.</div>
-<header class="top top-static wrap">
+<header class="top wrap top-static">
   <a class="brand" href="/"><span class="brand-name">Tom Shubert<span>IT Consulting</span></span></a>
-  <nav aria-label="Main">
-    <a href="/#m365">Microsoft 365</a>
-    <a href="/#services">Services</a>
-    <a href="/#about">About</a>
-    <a class="nav-call" href="tel:+18186356777">818.635.6777</a>
+  <button class="menu-btn" aria-expanded="false" aria-controls="site-nav">Menu</button>
+  <nav id="site-nav" aria-label="Main">
+      <a href="/">Home</a>
+      <a href="/microsoft-365">Microsoft 365</a>
+      <a href="/services">Services</a>
+      <a href="/clients">Clients</a>
+      <a href="/about">About</a>
+      <a href="/contact">Contact</a>
+      <a class="nav-call" href="tel:+18186356777">818.635.6777</a>
   </nav>
 </header>
-
 <main class="legal wrap">
   <p class="eyebrow">Legal</p>
   <h1>Client Service Agreement</h1>
@@ -61,12 +71,43 @@
   <h2>9. Contact</h2>
   <p>Questions: <a href="mailto:info@tomshubert.com">info@tomshubert.com</a>, 818.635.6777, or P.O. Box 8922, Calabasas, CA 91372.</p>
 </main>
-
 <footer class="wrap site-footer">
   <div class="footer-row">
-    <p>&copy; 2026 Tom Shubert IT Consulting</p>
+    <p>&copy; <span id="yr">2026</span> Tom Shubert IT Consulting &middot; 818.635.6777 &middot; <a href="mailto:info@tomshubert.com">info@tomshubert.com</a></p>
     <p><a href="/privacy">Privacy</a> &middot; <a href="/terms">Terms of Use</a> &middot; <a href="/agreement">Client Service Agreement</a> &middot; Free scam alerts at <a href="https://fakes.com">FAKES.COM</a> &middot; Websites by <a href="https://yourweb.com">YourWEB Services</a></p>
   </div>
 </footer>
+<script>
+document.getElementById('yr').textContent=new Date().getFullYear();
+(function(){var b=document.querySelector('.menu-btn'),n=document.getElementById('site-nav');if(!b||!n)return;
+b.addEventListener('click',function(){var o=n.classList.toggle('open');b.setAttribute('aria-expanded',o);b.textContent=o?'Close':'Menu';});})();
+(function(){
+  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  var words=["whole office","Microsoft 365","SharePoint & OneDrive","networks","computers","business phones","office technology","websites"];
+  var el=document.getElementById('word'), i=0; if(!el) return;
+  function type(w,n){ el.textContent=w.slice(0,n); if(n<w.length) setTimeout(function(){type(w,n+1)},55); else setTimeout(erase,2200); }
+  function erase(){ var t=el.textContent; if(t.length){ el.textContent=t.slice(0,-1); setTimeout(erase,28);} else { i=(i+1)%words.length; type(words[i],1);} }
+  setTimeout(erase,2400);
+})();
+
+(function(){
+  var f=document.getElementById('contact-form'); if(!f) return;
+  var st=f.querySelector('.cf-status'), btn=f.querySelector('button');
+  f.addEventListener('submit',function(e){
+    e.preventDefault();
+    var d={}; new FormData(f).forEach(function(v,k){d[k]=v;});
+    if(!d.name||!d.email||!d.message){st.textContent='Please fill in your name, email and message.';st.className='cf-status err';return;}
+    btn.disabled=true; st.textContent='Sending\u2026'; st.className='cf-status';
+    fetch('https://fakes.com/api/tsc-contact',{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify(d)})
+      .then(function(r){return r.json().then(function(j){return {ok:r.ok,j:j};});})
+      .then(function(x){
+        if(x.ok&&x.j.ok){f.reset();st.textContent='Thanks! Your message is on its way. I\'ll get back to you soon.';st.className='cf-status ok';}
+        else{st.textContent=(x.j&&x.j.error)||'Sorry, something went wrong. Please call 818.635.6777.';st.className='cf-status err';}
+      })
+      .catch(function(){st.textContent='Sorry, something went wrong. Please call 818.635.6777 or email info@tomshubert.com.';st.className='cf-status err';})
+      .then(function(){btn.disabled=false;});
+  });
+})();
+</script>
 </body>
 </html>
