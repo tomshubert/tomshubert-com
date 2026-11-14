@@ -7,6 +7,13 @@
 <meta name="description" content="Tom Shubert IT Consulting: hands-on IT support for small businesses. Microsoft 365, SharePoint and OneDrive, computers, networks, business phones and websites. IT solutions and support since 1982.">
 <meta name="robots" content="noindex, nofollow">
 <meta name="theme-color" content="#0b0e13">
+<link rel="canonical" href="https://tomshubert.com/">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://tomshubert.com/">
+<meta property="og:title" content="Tom Shubert IT Consulting: your personal IT consultant since 1982">
+<meta property="og:description" content="Hands-on IT support for small businesses in the Los Angeles area: Microsoft 365, networks, computers, phones and websites. No help desk, no monthly contract required.">
+<meta property="og:image" content="https://tomshubert.com/tom.jpg">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"ProfessionalService","name":"Tom Shubert IT Consulting","url":"https://tomshubert.com/","telephone":"+1-818-635-6777","email":"info@tomshubert.com","foundingDate":"1982","founder":{"@type":"Person","name":"Tom Shubert"},"address":{"@type":"PostalAddress","postOfficeBoxNumber":"8922","addressLocality":"Calabasas","addressRegion":"CA","postalCode":"91372","addressCountry":"US"},"areaServed":"Los Angeles area","description":"Hands-on IT support for small businesses: Microsoft 365, networks, computers, business phones and websites."}</script>
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -28,7 +35,7 @@
     </nav>
   </header>
   <section class="hero wrap">
-    <p class="eyebrow">Hands-on support for your <span class="rotator" aria-live="off"><span id="word">Microsoft 365</span><span class="cursor" aria-hidden="true"></span></span></p>
+    <p class="eyebrow">Hands-on support for your <span class="rotator" aria-live="off"><span id="word">whole office</span><span class="cursor" aria-hidden="true"></span></span></p>
     <h1>Your personal IT consultant since 1982.</h1>
     <p class="lede">From Microsoft 365 and office networks to computers, phones and websites, I keep your technology working. When you call, you get me: no help desk, no rotating technicians, and no monthly contract required.</p>
     <div class="cta">
@@ -36,7 +43,7 @@
       <a class="btn btn-quiet" href="mailto:info@tomshubert.com">Email info@tomshubert.com</a>
     </div>
     <ul class="hero-stats">
-      <li><b>40+</b> years in IT</li>
+      <li><b id="yrs">44</b> years in IT</li>
       <li><b>~100</b> businesses &amp; individuals supported</li>
       <li><b>1</b> person to call</li>
     </ul>
@@ -278,9 +285,10 @@
 </footer>
 <script>
 document.getElementById('yr').textContent=new Date().getFullYear();
+document.getElementById('yrs').textContent=new Date().getFullYear()-1982;
 (function(){
   if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
-  var words=["Microsoft 365","SharePoint & OneDrive","networks","computers","business phones","office technology","websites"];
+  var words=["whole office","Microsoft 365","SharePoint & OneDrive","networks","computers","business phones","office technology","websites"];
   var el=document.getElementById('word'), i=0;
   function type(w,n){ el.textContent=w.slice(0,n); if(n<w.length) setTimeout(function(){type(w,n+1)},55); else setTimeout(erase,2200); }
   function erase(){ var t=el.textContent; if(t.length){ el.textContent=t.slice(0,-1); setTimeout(erase,28);} else { i=(i+1)%words.length; type(words[i],1);} }
