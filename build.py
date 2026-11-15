@@ -4,7 +4,7 @@ Edit src/*.html (and the PAGES table below), never the generated .html files at 
 import re, pathlib
 ROOT = pathlib.Path(__file__).parent
 SRC = ROOT / "src"
-PREVIEW = True  # Only Tom decides when to set this to False (launch).
+PREVIEW = False  # Launched 2026-11-14 with Tom's approval.
 
 NAV = [("/", "Home"), ("/microsoft-365", "Microsoft 365"), ("/security", "Security"), ("/services", "Services"),
        ("/clients", "Clients"), ("/about", "About"), ("/contact", "Contact")]
