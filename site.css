@@ -273,3 +273,6 @@ h1.page-title{font-size:clamp(2.2rem,5vw,3.4rem);font-weight:300;margin:0 0 .5em
 .logo-plate{display:inline-block;background:#fff;border-radius:8px;padding:10px 16px;margin:.4rem 0 .8rem;line-height:0}
 .logo-plate img{height:30px;width:auto;display:block}
 .logo-plate img.logo-wide{height:22px;margin:4px 0}
+/* Section icons */
+.ico{display:flex;align-items:center;justify-content:center;width:42px;height:42px;margin-bottom:14px;border-radius:10px;color:var(--red-2);background:rgba(224,49,63,.10);border:1px solid rgba(224,49,63,.28)}
+.ico svg{width:22px;height:22px}

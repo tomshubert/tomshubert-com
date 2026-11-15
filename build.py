@@ -5,6 +5,7 @@ import re, pathlib
 ROOT = pathlib.Path(__file__).parent
 SRC = ROOT / "src"
 import hashlib
+import sys; sys.path.insert(0, str(ROOT)); from icons import add_icons
 CSSV = hashlib.md5((ROOT / "site.css").read_bytes()).hexdigest()[:8]
 PREVIEW = False  # Launched 2026-11-14 with Tom's approval.
 
@@ -100,7 +101,7 @@ def build():
         home = path == "/"
         body = []
         for i, name in enumerate(sections):
-            h = frag(name)
+            h = add_icons(frag(name))
             if i == 0 and not home: h = first_h2_to_h1(h)
             body.append(h)
         if home:
