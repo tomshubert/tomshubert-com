@@ -64,6 +64,7 @@ def head(path, title, desc, home=False):
 <meta property="og:description" content="{esc(desc)}">
 <meta property="og:image" content="https://tomshubert.com/tom.jpg">
 {LDJSON if home else ''}
+{'<meta name="msvalidate.01" content="045E76972C7051B702E14DC8FF2CEDDC">' if home else ''}
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 {FONTS}
 <link rel="stylesheet" href="/site.css?v={CSSV}">
