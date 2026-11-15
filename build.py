@@ -6,7 +6,7 @@ ROOT = pathlib.Path(__file__).parent
 SRC = ROOT / "src"
 PREVIEW = True  # Only Tom decides when to set this to False (launch).
 
-NAV = [("/", "Home"), ("/microsoft-365", "Microsoft 365"), ("/services", "Services"),
+NAV = [("/", "Home"), ("/microsoft-365", "Microsoft 365"), ("/security", "Security"), ("/services", "Services"),
        ("/clients", "Clients"), ("/about", "About"), ("/contact", "Contact")]
 
 PAGES = [
@@ -17,6 +17,9 @@ PAGES = [
   ("microsoft-365.html", "/microsoft-365", "Microsoft 365 | Tom Shubert IT Consulting",
    "Moving small offices off old servers to Microsoft 365: SharePoint, OneDrive, Exchange Online and Teams, plus optional backup and 24/7 monitoring.",
    ["m365", "cta"]),
+  ("security.html", "/security", "Security | Tom Shubert IT Consulting",
+   "Practical security for small offices: multifactor sign-in, email filtering, protected computers, optional 24/7 Microsoft 365 monitoring, backups and help when something goes wrong.",
+   ["security", "cta"]),
   ("services.html", "/services", "Services | Tom Shubert IT Consulting",
    "Computers, networks and Wi-Fi, business phones and VoIP, scams and malware, office technology and websites, plus the technologies I work with.",
    ["services", "tech", "cta"]),

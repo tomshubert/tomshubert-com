@@ -1,6 +1,6 @@
 # tomshubert.com
 
-Static site for Tom Shubert IT Consulting. Multi-page: Home, Microsoft 365, Services, Clients, About, Contact, plus legal pages. Edit the fragments in src/ (and the PAGES table in build.py), then run `python3 build.py`; never hand-edit the generated root .html pages (legal pages keep their <main> content in their own files). Styles in site.css. Cloudflare Pages project `tomshubert-com` in Tom's own Cloudflare account publishes `main`; preview at https://tomshubert-com.pages.dev.
+Static site for Tom Shubert IT Consulting. Multi-page: Home, Microsoft 365, Security, Services, Clients, About, Contact, plus legal pages. Edit the fragments in src/ (and the PAGES table in build.py), then run `python3 build.py`; never hand-edit the generated root .html pages (legal pages keep their <main> content in their own files). Styles in site.css. Cloudflare Pages project `tomshubert-com` in Tom's own Cloudflare account publishes `main`; preview at https://tomshubert-com.pages.dev.
 
 - Positioning: hands-on, relationship-driven IT consultant since 1982; jack of all trades, NOT a security expert. Lead with Microsoft 365 (SharePoint, OneDrive, Exchange Online; decades of Microsoft servers, trend is moving off servers).
 - Services: computers, networks/wireless, Nextiva & RingCentral VoIP (channel partner), office technology, malware/recovery, websites via YourWEB (samples: markpassin.com, fakes.com).
@@ -15,3 +15,4 @@ Static site for Tom Shubert IT Consulting. Multi-page: Home, Microsoft 365, Serv
 - Experience stat stays "40+ years in IT" (Tom prefers it; no exact or auto-updating count).
 - Tom supports clients with offices across the U.S. and employees worldwide, remotely; onsite visits in Southern California. Never cite specific client locations (no cities, states or countries).
 - Contact form posts to a Google Apps Script web app ("tomshubert.com contact form") in tom@tomshubert.com, which emails info@tomshubert.com. Never route this site through Brevo (that belongs to FAKES.COM).
+- Security page: practical protections Tom sets up and maintains. Never present Tom as a security expert or a security firm.
