@@ -272,3 +272,4 @@ h1.page-title{font-size:clamp(2.2rem,5vw,3.4rem);font-weight:300;margin:0 0 .5em
 @media (min-width:961px) and (max-width:1040px){nav{gap:8px;font-size:.8rem}.brand-name{font-size:1.5rem}.brand-name span{font-size:.85rem;margin-left:8px}.nav-call{padding:5px 10px}}
 .logo-plate{display:inline-block;background:#fff;border-radius:8px;padding:10px 16px;margin:.4rem 0 .8rem;line-height:0}
 .logo-plate img{height:30px;width:auto;display:block}
+.logo-plate img.logo-wide{height:22px;margin:4px 0}
