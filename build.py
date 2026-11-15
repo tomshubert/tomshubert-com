@@ -6,7 +6,7 @@ ROOT = pathlib.Path(__file__).parent
 SRC = ROOT / "src"
 PREVIEW = False  # Launched 2026-11-14 with Tom's approval.
 
-NAV = [("/", "Home"), ("/microsoft-365", "Microsoft 365"), ("/security", "Security"), ("/services", "Services"),
+NAV = [("/", "Home"), ("/microsoft-365", "Microsoft 365"), ("/security", "Security"), ("/phone-service", "Phone Service"), ("/services", "Services"),
        ("/clients", "Clients"), ("/about", "About"), ("/contact", "Contact")]
 
 PAGES = [
@@ -20,6 +20,9 @@ PAGES = [
   ("security.html", "/security", "Security | Tom Shubert IT Consulting",
    "Practical security for small offices: multifactor sign-in, email filtering, protected computers, optional 24/7 Microsoft 365 monitoring, backups and help when something goes wrong.",
    ["security", "cta"]),
+  ("phone-service.html", "/phone-service", "Business Phone Service | Tom Shubert IT Consulting",
+   "Cloud business phone service from a Nextiva and RingCentral channel partner: choosing the right service, keeping your numbers, setup, training and ongoing support.",
+   ["phone-service", "cta-phone-service"]),
   ("services.html", "/services", "Services | Tom Shubert IT Consulting",
    "Computers, networks and Wi-Fi, business phones and VoIP, scams and malware, office technology and websites, plus the technologies I work with.",
    ["services", "tech", "cta"]),
