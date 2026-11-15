@@ -11,7 +11,7 @@ NAV = [("/", "Home"), ("/microsoft-365", "Microsoft 365"), ("/security", "Securi
 
 PAGES = [
   # (file, path, title, description, sections)
-  ("index.html", "/", "Tom Shubert IT Consulting | Your personal IT consultant since 1982",
+  ("index.html", "/", "Tom Shubert IT Consulting | IT Consultant in Calabasas & Los Angeles since 1982",
    "Hands-on IT support for small businesses, based in Calabasas, CA and supporting clients across the U.S.: Microsoft 365, networks, computers, phones and websites. No help desk, no monthly contract required.",
    ["hero", "personal", "anywhere", "overview", "how", "cta"]),
   ("microsoft-365.html", "/microsoft-365", "Microsoft 365 | Tom Shubert IT Consulting",
@@ -23,7 +23,7 @@ PAGES = [
   ("phone-service.html", "/phone-service", "Business Phone Service | Tom Shubert IT Consulting",
    "Cloud business phone service from a Nextiva and RingCentral channel partner: choosing the right service, keeping your numbers, setup, training and ongoing support.",
    ["phone-service", "cta-phone-service"]),
-  ("services.html", "/services", "Services | Tom Shubert IT Consulting",
+  ("services.html", "/services", "IT Services for Small Businesses | Tom Shubert IT Consulting, Calabasas & Los Angeles",
    "Computers, networks and Wi-Fi, business phones and VoIP, scams and malware, office technology and websites, plus the technologies I work with.",
    ["services", "tech", "cta"]),
   ("clients.html", "/clients", "Clients & Stories | Tom Shubert IT Consulting",
