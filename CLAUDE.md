@@ -14,3 +14,4 @@ Static site for Tom Shubert IT Consulting. Multi-page: Home, Microsoft 365, Serv
 - Work examples come from Tom's sent emails to charge@tomshubert.com; always anonymize (no client or employee names).
 - Experience stat stays "40+ years in IT" (Tom prefers it; no exact or auto-updating count).
 - Tom supports clients with offices across the U.S. and employees worldwide, remotely; onsite visits in Southern California. Never cite specific client locations (no cities, states or countries).
+- Contact form posts to a Google Apps Script web app ("tomshubert.com contact form") in tom@tomshubert.com, which emails info@tomshubert.com. Never route this site through Brevo (that belongs to FAKES.COM).
