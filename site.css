@@ -59,7 +59,7 @@ nav a:hover{color:var(--ink)}
 section{scroll-margin-top:20px}
 .m365{padding-top:96px;padding-bottom:96px}
 .m365-head{max-width:780px}
-.m365-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px;margin-top:2.4rem}
+.m365-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:18px;margin-top:2.4rem}
 .m365-grid>div{background:var(--card);border:1px solid var(--rule);border-radius:12px;padding:26px;position:relative}
 .m365-grid>div::before{content:"";position:absolute;left:26px;top:0;width:36px;height:3px;background:var(--red)}
 .m365-grid p{margin:0;color:var(--ink-2);font-size:.97rem}
