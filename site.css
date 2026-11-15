@@ -26,7 +26,7 @@ h3{font-weight:500;font-size:1.15rem}
 .top{position:absolute;top:0;left:0;right:0;z-index:5;display:flex;align-items:center;justify-content:space-between;gap:16px;padding-top:22px;padding-bottom:22px;flex-wrap:wrap}
 .brand{display:flex;align-items:baseline;gap:8px;text-decoration:none;font-family:var(--display)}
 .brand-name{font-size:1.75rem;font-weight:500;letter-spacing:-.01em;line-height:1.1}
-.brand-name span{display:block;font-size:.72rem;font-weight:400;letter-spacing:.32em;text-transform:uppercase;color:var(--red-2);margin:4px 0 0 2px}
+.brand-name span{display:inline;font-size:.78rem;font-weight:400;letter-spacing:.24em;text-transform:uppercase;color:var(--red-2);margin-left:10px}
 .mark{display:none}
 nav{display:flex;gap:24px;align-items:center;font-size:.92rem;flex-wrap:wrap}
 nav a{text-decoration:none;color:var(--ink-2)}
@@ -255,4 +255,4 @@ h1.page-title{font-size:clamp(2.2rem,5vw,3.4rem);font-weight:300;margin:0 0 .5em
 .anywhere-inner p{color:var(--ink-2)}
 @media (max-width:800px){.anywhere-inner{grid-template-columns:1fr;gap:12px}}
 
-@media (max-width:860px){.brand-name{font-size:1.4rem}.brand-name span{font-size:.62rem;letter-spacing:.26em}}
+@media (max-width:860px){.brand-name{font-size:1.4rem}.brand-name span{display:block;font-size:.62rem;letter-spacing:.26em;margin:4px 0 0 2px}}
