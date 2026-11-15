@@ -4,6 +4,8 @@ Edit src/*.html (and the PAGES table below), never the generated .html files at 
 import re, pathlib
 ROOT = pathlib.Path(__file__).parent
 SRC = ROOT / "src"
+import hashlib
+CSSV = hashlib.md5((ROOT / "site.css").read_bytes()).hexdigest()[:8]
 PREVIEW = False  # Launched 2026-11-14 with Tom's approval.
 
 NAV = [("/", "Home"), ("/microsoft-365", "Microsoft 365"), ("/security", "Security"), ("/phone-service", "Phone Service"), ("/services", "Services"),
@@ -63,7 +65,7 @@ def head(path, title, desc, home=False):
 {LDJSON if home else ''}
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 {FONTS}
-<link rel="stylesheet" href="/site.css">
+<link rel="stylesheet" href="/site.css?v={CSSV}">
 </head>
 <body>
 {'<div class="preview-banner">Preview of the new site. The current tomshubert.com stays live until Tom approves this one.</div>' if PREVIEW else ''}'''
