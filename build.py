@@ -26,6 +26,9 @@ PAGES = [
   ("phone-service.html", "/phone-service", "Business Phone Service: Nextiva & RingCentral | Tom Shubert IT",
    "Cloud business phone service from a Nextiva and RingCentral channel partner: choosing the right service, keeping your numbers, setup, training and ongoing support.",
    ["phone-service", "cta-phone-service"]),
+  ("remote-help.html", "/remote-help", "Get Remote Help Now | Tom Shubert IT Consulting",
+   "Need IT help right away? Call Tom, then connect with free Microsoft Quick Assist or Chrome Remote Desktop so he can see your screen and fix the problem.",
+   ["remote-help"]),
   ("services.html", "/services", "Small Business IT Services in Calabasas & L.A. | Tom Shubert IT",
    "Hands-on IT services for small businesses from Calabasas to anywhere in the U.S.: computers, networks and Wi-Fi, business phone service, malware help, office technology and websites.",
    ["services", "tech", "cta"]),
@@ -87,7 +90,7 @@ def header(path, overlay):
 FOOTER = '''<footer class="wrap site-footer">
   <div class="footer-row">
     <p>&copy; <span id="yr">2026</span> Tom Shubert IT Consulting &middot; 818.635.6777 &middot; <a href="mailto:info@tomshubert.com">info@tomshubert.com</a></p>
-    <p><a href="/privacy">Privacy</a> &middot; <a href="/terms">Terms of Use</a> &middot; <a href="/agreement">Client Service Agreement</a> &middot; Free scam alerts at <a href="https://fakes.com">FAKES.COM</a> &middot; Websites by <a href="https://yourweb.com">YourWEB Services</a></p>
+    <p><a href="/remote-help"><b>Get remote help</b></a> &middot; <a href="/privacy">Privacy</a> &middot; <a href="/terms">Terms of Use</a> &middot; <a href="/agreement">Client Service Agreement</a> &middot; Free scam alerts at <a href="https://fakes.com">FAKES.COM</a> &middot; Websites by <a href="https://yourweb.com">YourWEB Services</a></p>
   </div>
 </footer>'''
 
