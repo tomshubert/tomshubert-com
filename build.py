@@ -27,7 +27,7 @@ PAGES = [
    "Cloud business phone service from a Nextiva and RingCentral channel partner: choosing the right service, keeping your numbers, setup, training and ongoing support.",
    ["phone-service", "cta-phone-service"]),
   ("remote-help.html", "/remote-help", "Get Remote Help Now | Tom Shubert IT Consulting",
-   "Need IT help right away? Call Tom, then connect with free Microsoft Quick Assist or Chrome Remote Desktop so he can see your screen and fix the problem.",
+   "Need IT help right away? Call Tom, download the free RustDesk remote support app, and he can see your screen and fix the problem while you talk.",
    ["remote-help"]),
   ("services.html", "/services", "Small Business IT Services in Calabasas & L.A. | Tom Shubert IT",
    "Hands-on IT services for small businesses from Calabasas to anywhere in the U.S.: computers, networks and Wi-Fi, business phone service, malware help, office technology and websites.",

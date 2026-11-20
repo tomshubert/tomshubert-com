@@ -60,6 +60,8 @@ H3 = {
   "Choosing the right service": "check", "Keeping your numbers": "hash",
   "Set up before you switch": "sliders", "Calls anywhere": "mobile",
   "Your network, ready for voice": "network", "Training and support after": "chat",
+  # Remote help
+  "Step by step": "monitor", "You stay in control": "lock", "Backup for Windows: Quick Assist": "buoy",
 }
 
 def svg(name):
